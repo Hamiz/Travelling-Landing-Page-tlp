@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased text-gray-900 bg-gradient-to-br from-white to-primary-50;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply bg-white/80 backdrop-blur-sm;
+  }
+
+  .hover-scale {
+    @apply transform transition-transform duration-300 hover:scale-105;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-800;
+  }
+}
+
+@layer utilities {
+  .floating-animation {
+    animation: floating 6s ease-in-out infinite;
+  }
+}
+
+/* Custom Animations */
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-primary-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-300 rounded-full hover:bg-primary-400 transition-colors duration-300;
+}
+
+/* Additional Utility Classes */
+.transition-all-300 {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.card-shadow {
+  @apply shadow-lg hover:shadow-xl transition-shadow duration-300;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-800;
+}
+
+.gradient-bg {
+  @apply bg-gradient-to-r from-primary-500 to-primary-700;
+}
+
+.button-animation {
+  @apply transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95;
+}
+
+.link-animation {
+  @apply relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary-500 after:transition-all after:duration-300 hover:after:w-full;
+}
+
+/* Animation Classes */
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-scale-up {
+  animation: scaleUp 0.3s ease-out;
+}
+
+/* Responsive Font Sizes */
+@media (max-width: 640px) {
+  .text-responsive {
+    @apply text-sm;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .text-responsive {
+    @apply text-base;
+  }
+}
+
+@media (min-width: 1025px) {
+  .text-responsive {
+    @apply text-lg;
+  }
+}
