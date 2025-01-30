@@ -61,7 +61,7 @@ const HeroSection = () => {
   return (
     <div className="relative h-screen overflow-hidden">
       <img
-        src="src/images/herosection.jpg"
+        src="images/herosection.jpg"
         alt="Scenic Travel Destination"
         className="w-full h-full object-cover transform scale-105 animate-float"
       />

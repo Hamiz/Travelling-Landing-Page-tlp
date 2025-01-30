@@ -7,37 +7,37 @@ const Destinations = () => {
   const allDestinations = [
     {
       title: "Paris, France",
-      image: "src/images/fd1.jpg",
+      image: "images/fd1.jpg",
       description:
         "Experience the city of love and lights with our curated tours.",
     },
     {
       title: "Maldives",
-      image: "src/images/fd2.jpg",
+      image: "images/fd2.jpg",
       description:
         "Discover paradise on Earth with crystal clear waters and white beaches.",
     },
     {
       title: "Skardu, Pakistan",
-      image: "src/images/fd3.jpg",
+      image: "images/fd3.jpg",
       description:
         "Explore the majestic mountains and rich culture of Northern Pakistan.",
     },
     {
       title: "Santorini, Greece",
-      image: "src/images/d1.jpg",
+      image: "images/d1.jpg",
       description:
         "Experience stunning sunsets and white-washed architecture on this magical island.",
     },
     {
       title: "Tokyo, Japan",
-      image: "src/images/d2.jpg",
+      image: "images/d2.jpg",
       description:
         "Immerse yourself in the perfect blend of tradition and modern technology.",
     },
     {
       title: "Machu Picchu, Peru",
-      image: "src/images/d3.jpg",
+      image: "images/d3.jpg",
       description:
         "Discover the ancient Incan civilization in this mystical mountain setting.",
     },

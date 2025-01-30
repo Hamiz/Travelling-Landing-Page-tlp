@@ -1,8 +1,8 @@
-import HeroSection from "./components/HeroSection";
-import FeaturedDestinations from "./components/FeaturedDestinations";
-import PackageCard from "./components/PackageCard";
-import Testimonial from "./components/Testimonial";
-import ContactForm from "./components/ContactForm";
+import HeroSection from "./HeroSection";
+import FeaturedDestinations from "./FeaturedDestinations";
+import PackageCard from "./PackageCard";
+import Testimonial from "./Testimonial";
+import ContactForm from "./ContactForm";
 import { motion } from "framer-motion";
 
 // Home Component
@@ -33,21 +33,21 @@ const Home = () => {
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
         >
           <PackageCard
-            image="src/images/hm.jpg"
+            image="images/hm.jpg"
             title="Honeymoon Getaway"
             price="1999"
             description="7 days of romance in paradise with luxury accommodations and private tours."
             features={["Luxury Suite", "Private Tours", "Spa Access"]}
           />
           <PackageCard
-            image="src/images/at.jpg"
+            image="images/at.jpg"
             title="Adventure Trails"
             price="1499"
             description="5 days of thrilling activities including hiking, rafting, and rock climbing."
             features={["Expert Guides", "Equipment", "Safety Training"]}
           />
           <PackageCard
-            image="src/images/ft.jpg"
+            image="images/ft.jpg"
             title="Family Trip"
             price="2499"
             description="10 days of family fun with kid-friendly activities and comfortable stays."
@@ -79,37 +79,37 @@ const Home = () => {
           >
             <Testimonial
               name="John Doe"
-              image="src/images/t1.jpg"
+              image="images/t1.jpg"
               text="Amazing experience! The team made our honeymoon absolutely perfect."
               location="Paris, France"
             />
             <Testimonial
               name="Jane Smith"
-              image="src/images/t2.jpg"
+              image="images/t2.jpg"
               text="Professional service and unforgettable adventures. Highly recommended!"
               location="Bali, Indonesia"
             />
             <Testimonial
               name="Mike Johnson"
-              image="src/images/t3.jpg"
+              image="images/t3.jpg"
               text="Best family vacation ever! Everything was well-planned and stress-free."
               location="Tokyo, Japan"
             />
             <Testimonial
-              name="John Doe"
-              image="src/images/t4.jpg"
+              name="Joey Clark"
+              image="images/t4.jpg"
               text="Amazing experience! Thanks to the Wanderlust Adventure and The team, they made our honeymoon absolutely perfect."
               location="United Kingdom, London"
             />
             <Testimonial
-              name="Jane Smith"
-              image="src/images/t5.jpg"
+              name="Clark Kent"
+              image="images/t5.jpg"
               text="Professional service and unforgettable adventures. Highly recommended! Thanks to the Wanderlust Adventure"
               location="Pakistan, Islamabad"
             />
             <Testimonial
-              name="Mike Johnson"
-              image="src/images/t6.jpg"
+              name="Micheal Johnson"
+              image="images/t6.jpg"
               text="Best family vacation ever! Thanks to the Wanderlust Adventure. Everything was well-planned and stress-free."
               location="India, Jaipur"
             />
