@@ -5,19 +5,19 @@ const FeaturedDestinations = () => {
   const destinations = [
     {
       title: "Paris, France",
-      image: "src/images/fd1.jpg",
+      image: "/images/fd1.jpg",
       description:
         "Experience the city of love and lights with our curated tours.",
     },
     {
       title: "Maldives",
-      image: "src/images/fd2.jpg",
+      image: "/images/fd2.jpg",
       description:
         "Discover paradise on Earth with crystal clear waters and white beaches.",
     },
     {
       title: "Skardu, Pakistan",
-      image: "src/images/fd3.jpg",
+      image: "/images/fd3.jpg",
       description:
         "Explore the majestic mountains and rich culture of Northern Pakistan.",
     },
